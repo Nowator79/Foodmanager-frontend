@@ -33,6 +33,7 @@ function browsersync() {
 function js() {
 	return src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/owl-carousel/owl.carousel.min.js', 
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -41,8 +42,20 @@ function js() {
 	.pipe(browserSync.stream())
 }
 
-function sass() {
-	return src('app/sass/**/*.sass')
+function Mainsass() {
+	return src('app/sass/**/main.sass')
+	.pipe(sassfn())
+	.pipe(postCss([
+		autoprefixer({ grid: 'autoplace' }),
+		cssnano({ preset: ['default', { discardComments: { removeAll: true } }] })
+	]))
+	.pipe(rename({ suffix: '.min', prefix : '' }))
+	.pipe(dest('app/css'))
+	.pipe(browserSync.stream())
+}
+
+function Templatesass() {
+	return src('app/sass/**/template_styles.sass')
 	.pipe(sassfn())
 	.pipe(postCss([
 		autoprefixer({ grid: 'autoplace' }),
@@ -104,12 +117,15 @@ function rsync() {
 }
 
 function startwatch() {
-	watch('app/sass/**/*.sass', { usePolling: true }, sass)
+	watch('app/sass/**/main.sass', { usePolling: true }, Mainsass)
+	watch('app/sass/**/template_styles.sass', { usePolling: true }, Mainsass)
+	watch('app/sass/**/style.scss', { usePolling: true }, Templatesass)
+
 	watch(['libs/**/*.js', 'app/js/common.js'], { usePolling: true }, js)
 	watch(['app/*.html'], { usePolling: true }).on('change', browserSync.reload)
 }
 
-export { js, sass, imagemin, deploy, rsync, clearcache }
-export let build = series(removedist, imagemin, js, sass, buildcopy)
+export { js, Mainsass, imagemin, deploy, rsync, clearcache }
+export let build = series(removedist, imagemin, js, Mainsass, Templatesass, buildcopy)
 
-export default series(js, sass, parallel(browsersync, startwatch))
+export default series(js, Mainsass, Templatesass, parallel(browsersync, startwatch))

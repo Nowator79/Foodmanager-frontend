@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Roman.eot');
+	src: local('Avenir Roman'), local('Avenir-Roman'),
+			url('fonts/Avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Roman.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Roman.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Light.eot');
+	src: local('Avenir Light'), local('Avenir-Light'),
+			url('fonts/Avenir/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Light.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Light.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('fonts/Avenir/Avenir-BookOblique.eot');
+	src: local('Avenir Book Oblique'), local('Avenir-BookOblique'),
+			url('fonts/Avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-BookOblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-BookOblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-BookOblique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Black Oblique';
+	src: url('fonts/Avenir/Avenir-BlackOblique.eot');
+	src: local('Avenir Black Oblique'), local('Avenir-BlackOblique'),
+			url('fonts/Avenir/Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-BlackOblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-BlackOblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-BlackOblique.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Heavy.eot');
+	src: local('Avenir Heavy'), local('Avenir-Heavy'),
+			url('fonts/Avenir/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Heavy.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Heavy.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-HeavyOblique.eot');
+	src: local('Avenir Heavy Oblique'), local('Avenir-HeavyOblique'),
+			url('fonts/Avenir/Avenir-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-HeavyOblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-HeavyOblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-HeavyOblique.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-MediumOblique.eot');
+	src: local('Avenir Medium Oblique'), local('Avenir-MediumOblique'),
+			url('fonts/Avenir/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-MediumOblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-MediumOblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-MediumOblique.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-LightOblique.eot');
+	src: local('Avenir Light Oblique'), local('Avenir-LightOblique'),
+			url('fonts/Avenir/Avenir-LightOblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-LightOblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-LightOblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-LightOblique.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('fonts/Avenir/Avenir-Book.eot');
+	src: local('Avenir Book'), local('Avenir-Book'),
+			url('fonts/Avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Book.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Book.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Black.eot');
+	src: local('Avenir Black'), local('Avenir-Black'),
+			url('fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Black.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Oblique.eot');
+	src: local('Avenir Oblique'), local('Avenir-Oblique'),
+			url('fonts/Avenir/Avenir-Oblique.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Oblique.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Oblique.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Oblique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/Avenir-Medium.eot');
+	src: local('Avenir Medium'), local('Avenir-Medium'),
+			url('fonts/Avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Avenir/Avenir-Medium.woff2') format('woff2'),
+			url('fonts/Avenir/Avenir-Medium.woff') format('woff'),
+			url('fonts/Avenir/Avenir-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
