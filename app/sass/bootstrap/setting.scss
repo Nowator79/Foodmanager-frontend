@@ -1,0 +1,17 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$font-size: (
+  1: 10px,
+  2: 14px,
+  3: 18px,
+  4: 24px,
+  5: 28px,
+  6: 32px
+) !default;
